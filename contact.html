@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactstyle.css">
+    <header class="header">
+        <a href="#" class="logo" onclick="scrollToSection('home-section')">SciAlert Hub</a>
+        <nav class="navbar">
+            <a href="#home" style="--vlr:1"  id="homelink">Home</a>
+            <a href="#ADOD" style="--vlr:2" id="ADODLink" >ADOD</a>
+            <a href="#BDOD" style="--vlr:2"  id="BDODLink" >BDOD</a>
+            <a href="#Technology" style="--vlr:2" id="techLink">Technology</a>
+            <a href="#Contact" style="--vlr:3" class="active" id="contact">Contact</a>
+            <a href="#Articles" style="--vlr:4" id="articles">Articles</a>
+            <a href="#Login" style="--vlr:5" id="login">Login</a>
+        </nav>
+        </header>
+</head>
+<body>
+
+<h2>Contact Us</h2>
+
+<form action="mailto:a.gokul311@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    
+    <label for="contact">Contact:</label><br>
+    <input type="text" id="contact" name="contact"><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    
+    <label for="feedback">Feedback:</label><br>
+    <textarea id="feedback" name="feedback"></textarea><br>
+    
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    
+    <label for="status">College/Work/Student:</label><br>
+    <select id="status" name="status">
+        <option value="college">College</option>
+        <option value="work">Work</option>
+        <option value="student">Student</option>
+    </select><br>
+    
+    <label for="place">Place:</label><br>
+    <input type="text" id="place" name="place"><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+<script src="javas.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: .15rem;
+}
+
+.navbar {
+    display:inline-flex;
+    letter-spacing: 10rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    letter-spacing: .15rem;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: rgba(0, 157, 255, 0.836);
+    }
+  
+  /* Article styles */
+  article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  article img {
+    display: block;
+    margin: 0 auto;
+    width: 780px;
+    padding: 10px;
+  }
+  
+  /* Comments section styles */
+  #comments {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  #comments h2 {
+    margin-bottom: 10px;
+  }
+  
+  #comment-form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  #comment-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #comment-form button:hover {
+    background-color: #555;
+  }
+  
