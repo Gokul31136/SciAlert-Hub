@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciAlert Hub</title>
+    <link rel="stylesheet" href="bdodstyle.css">
+    <!-- *************************Navbar************************* -->
+    <header class="header">
+        <a href="#" class="logo" onclick="scrollToSection('home-section')">SciAlert Hub</a>
+        <nav class="navbar">
+            <a href="#home" style="--vlr:1"  id="homelink">Home</a>
+        <a href="#ADOD" style="--vlr:2" id="ADODLink" >ADOD</a>
+        <a href="#BDOD" style="--vlr:2" class="active" id="BDODLink" >BDOD</a>
+        <a href="#Technology" style="--vlr:2" id="techLink">Technology</a>
+        <a href="#Contact" style="--vlr:3" id="contact">Contact</a>
+        <a href="#Articles" style="--vlr:4" id="articles">Articles</a>
+        <a href="#Login" style="--vlr:5" id="login">Login</a>
+        </nav>
+    </header>
+    
+</head>
+
+<body>
+    <!-- *************************BDOD Section************************* -->
+    <section class="bdod" id="BDOD">
+        <h2>Biological Detail of the Day</h2>
+        <div class="bdod-content">
+            <img src="friller.jpg" alt="bdod">
+        </div>
+        <div class="bdod-text">
+            <h1>The frilled shark</h1>
+            <p>The frilled shark, also known as the lizard shark, is one of two extant species in the family Chlamydoselachidae. It is considered a living fossil due to its primitive, eel-like physical traits, including a dark-brown color, amphistyly (jaw articulation), and a long body up to 2.0 meters in length, with fins located towards the tail. Its name comes from the fringed appearance of its six pairs of gill slits. These sharks are found in regions of the Atlantic and Pacific oceans, typically inhabiting the outer continental shelf and upper continental slope, often near the ocean floor. They feed on cephalopods, smaller sharks, and bony fish, practicing diel vertical migration to feed at night. Reproductively, frilled sharks are aplacental viviparous, with embryos developing inside egg capsules within the mother's body.
+            </p>
+            <p>Gestation can last up to 3.5 years, with litters of 2–15 pups. They are usually caught as bycatch in commercial fishing, with some economic value for their meat and fishmeal. The taxonomy of the frilled shark was initially described by Ludwig Döderlein and later by Samuel Garman in 1884. It belongs to the Chlamydoselachus genus, with the common name deriving from Greek and Latin roots meaning "frill" and "like an eel." Evolutionarily, the frilled shark is considered a "living fossil," with relatively unchanged anatomy since the Late.
+            </p>
+            <p>Jurassic and Late Cretaceous epochs. It is classified within the neoselachian clade, related to modern sharks and rays, particularly the cow shark. Frilled sharks are solitary creatures, rarely interacting with others of their kind. They inhabit various depths but are commonly found between 50 and 200 meters deep. Although they have been caught as deep as 1,570 meters, they typically do not occur below 1,000 meters.</p>
+        </div>
+        <div class="bdod-news">
+            <div class="newsitem-bdod">
+                <img src="birds.jpeg" alt="News 1">
+                <p><b>Birds</b></p>
+                <p>Posted: March 23, 2024</p>
+            </div>
+            <div class="newsitem-bdod">
+                <img src="polarbear.jpg" alt="News 1">
+                <p><b>polarbear</b></p>
+                <p>Posted: March 23, 2024</p>
+            </div>
+            <div class="newsitem-bdod">
+                <img src="lion.webp" alt="News 1">
+                <p><b>Lion</b></p>
+                <p>Posted: March 23, 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination Controls -->
+    <div class="pagination">
+        <button class="prev" onclick="prevPage()">Previous</button>
+        <span class="page-number">1</span>
+        <button class="next" onclick="nextPage()">Next</button>
+    </div>
+
+    <script src="javas.js"></script>
+</body>
+
+</html>

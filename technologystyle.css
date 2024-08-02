@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffffcc;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: .15rem;
+}
+
+.navbar {
+    display:inline-flex;
+    letter-spacing: 10rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    letter-spacing: .15rem;
+    transition: .3s;
+}
+.navbar a:hover,.navbar a.active{
+    color: #007bff;
+}
+
+/* BDOD Section */
+.tech {
+    padding: 50px;
+    text-align: center;
+}
+
+.tech h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.tech-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tech-content img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.tech-text {
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto 30px auto;
+}
+
+.tech-text h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.tech-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.tech-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsitem-tech {
+    width: 300px;
+    margin: 0 20px 20px 20px;
+    text-align: left;
+}
+
+.newsitem-tech img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.newsitem-tech p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/*Pagination */
+
+.pagination {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.pagination button{
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pagination span {
+   
+    margin: 0 5px;
+    color: #000000;
+    border-radius: 2px;
+
+}
+
+.pagination button:hover,
+.pagination button:focus
+ {
+    background-color: #0056b3;
+}
+
+.pagination .page-number {
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bolt IoT Dashboard</title>
+</head>
+<body>
+    <div id="sensorData">Loading sensor data...</div>
+    <script>
+        // Example function to fetch data from an API and update the webpage
+        function fetchSensorData() {
+            fetch('https://api.boltiot.com/v1/device/data?apiKey=672915a9-e5a2-4a97-9c89-a7b7c4ab304c&deviceID=BOLT6470453')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('sensorData').textContent = JSON.stringify(data);
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+
+        // Call the function when the page loads
+        window.onload = fetchSensorData;
+    </script>
+</body>
+</html>

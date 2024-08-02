@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciAlert Hub</title>
+    <link rel="stylesheet" href="technologystyle.css">
+     <!-- *************************Navbar************************* -->
+<header class="header">
+    <a href="#" class="logo" onclick="scrollToSection('home-section')">SciAlert Hub</a>
+    <nav class="navbar">
+        <a href="#home" style="--vlr:1"  id="homelink">Home</a>
+        <a href="#ADOD" style="--vlr:2"  id="ADODLink" >ADOD</a>
+        <a href="#BDOD" style="--vlr:2"  id="BDODLink" >BDOD</a>
+        <a href="#Technology" style="--vlr:2" class="active" id="techLink">Technology</a>
+        <a href="#Contact" style="--vlr:3" id="contact">Contact</a>
+        <a href="#Articles" style="--vlr:4" id="articles">Articles</a>
+        <a href="#Login" style="--vlr:5" id="login">Login</a>
+    </nav>
+</header>
+</head>
+
+<body>
+    <!-- *************************BDOD Section************************* -->
+    <section class="tech" id="TECH">
+        <h2>TECHNOLOGY </h2>
+        <div class="tech-content">
+            <img src="speech.jpg" alt="tech">
+        </div>
+        <div class="tech-text">
+            <h1>The Advancement of Speech Recognition Technology:
+                Conversing with Machines
+                </h1>
+            <p>Speech recognition is the process of converting spoken language into text, enabling machines to transcribe human speech. It is utilized in various applications such as virtual assistants, hands-free dictation software, accessibility technology for individuals with disabilities, and language translation. Natural Language Processing (NLP) enhances speech recognition by analyzing grammar, syntax, and contextual information to improve accuracy. Speech recognition is a subset of Artificial Intelligence (AI) and Machine Learning (ML), where AI helps understand the context and meaning of words, while ML enables systems to learn and adapt to different accents and pronunciations, making communication more natural and seamless.
+            </p>
+            <p>Hidden Markov Models (HMMs) are often used in speech recognition systems to identify specific words or commands, making them suitable for applications like voice-controlled devices. They model speech as a series of phonemes and use the Viterbi algorithm to decode speech signals into text based on the likelihood of observed feature vectors given hidden states.</p>
+            <br>
+                <img src="hmm.png" alt="flowchart" justify-content="centre">   <br>
+             
+            <p>Dynamic Time Warping (DTW) is another algorithm used for speech recognition, especially in continuous speech recognition systems. It aligns spoken speech signals with reference templates to compute similarity, allowing it to handle variations in speaking rate, intonation, and pronunciation. DTW’s ability to warp the time axis enables it to handle non-linear variations in time or speed, making it effective in various speech-processing applications.</p>
+            <p>   <br>
+                <img src="euclidean.png" alt="flowchart"></p>
+                <p>Neural networks offer a modern approach to speech recognition and are capable of recognizing any spoken word, not just predetermined ones. They learn the relationships between speech and text, making them suitable for tasks like dictation systems. Neural networks take audio input, typically in the form of spectrograms or MFCCs, and output sequences of words or characters using multiple layers of artificial neurons to process the input and generate the final output.</p>
+            <p>
+                <img src="deepneuro.png" alt="flowchart"></p>
+            <p>Posted: March 23, 2024</p>
+            
+        </div>
+        <div class="tech-news">
+            <div class="newsitem-tech">
+                <img src="face.jpeg" alt="News 1">
+                <p>Face Recognition</p>
+                <p>Posted: March 23, 2024</p>
+            </div>
+            <div class="newsitem-tech">
+                <img src="deep.jpeg" alt="News 1">
+                <p>Deep Learning</p>
+                <p>Posted: March 23, 2024</p>
+            </div>
+            <div class="newsitem-tech">
+                <img src="eye.jpeg" alt="News 1">
+                <p>Eye Recognition</p>
+                <p>Posted: March 23, 2024</p>
+            </div>
+            <div class="newsitem-tech">
+                <img src="sci.jpg" alt="News 1">
+                <p>Some sentence about this news article.</p>
+                <p>Posted: March 14, 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination Controls -->
+    <div class="pagination">
+        <button class="prev" onclick="prevPage()">Previous</button>
+        <span class="page-number">1</span>
+        <button class="next" onclick="nextPage()">Next</button>
+    </div>
+
+    <script src="javas.js"></script>
+</body>
+
+</html>
