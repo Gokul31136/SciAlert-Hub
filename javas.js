@@ -31,7 +31,7 @@ navLinks.forEach(link => {
 
 document.getElementById("homelink").addEventListener("click", function(event) {
     event.preventDefault();
-    window.location.href = "begin.html";
+    window.location.href = "index.html";
 });
 
 document.getElementById("BDODLink").addEventListener("click", function(event) {
